@@ -1,0 +1,17 @@
+﻿<Window x:Class="MachineTimeAccounting.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MachineTimeAccounting"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="450" Width="500" WindowStartupLocation="CenterScreen"
+        BorderBrush="Gray">
+    <StackPanel>
+        <TextBlock>Пользователь</TextBlock>
+        <ComboBox x:Name="itemsComboBox" DisplayMemberPath="Name" IsTextSearchEnabled="True" IsEditable="True" InputLanguageManager.InputLanguage="ru-RU"/>
+        <TextBlock>Пароль</TextBlock>
+        <PasswordBox x:Name="passwordPasswordBox" InputLanguageManager.InputLanguage="en-US"/>
+        <Button x:Name="loginButton" Click="loginButton_Click" IsDefault="True">Войти</Button>
+    </StackPanel>
+</Window>
